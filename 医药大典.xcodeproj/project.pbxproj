@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D9C8CE2D713FCF01836848A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD71BA442C1F6C110335358 /* libPods.a */; };
 		B04A9F861BCE45FC000EF2E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B04A9F851BCE45FC000EF2E2 /* main.m */; };
 		B04A9F891BCE45FC000EF2E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B04A9F881BCE45FC000EF2E2 /* AppDelegate.m */; };
 		B04A9F8C1BCE45FC000EF2E2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04A9F8B1BCE45FC000EF2E2 /* ViewController.m */; };
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		349551661278427623EAC986 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8DD71BA442C1F6C110335358 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A057D7A1D31F1BC4B4BC4FDB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B04A9F801BCE45FC000EF2E2 /* 医药大典.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "医药大典.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04A9F841BCE45FC000EF2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B04A9F851BCE45FC000EF2E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D9C8CE2D713FCF01836848A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80C5BC3AC7C749A749E94CF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A057D7A1D31F1BC4B4BC4FDB /* Pods.debug.xcconfig */,
+				349551661278427623EAC986 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B04A9F771BCE45FC000EF2E2 = {
 			isa = PBXGroup;
 			children = (
 				B04A9F821BCE45FC000EF2E2 /* 医药大典 */,
 				B04A9F9C1BCE45FC000EF2E2 /* 医药大典Tests */,
 				B04A9F811BCE45FC000EF2E2 /* Products */,
+				80C5BC3AC7C749A749E94CF1 /* Pods */,
+				C272B3817813C0455E51CE76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +135,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C272B3817813C0455E51CE76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DD71BA442C1F6C110335358 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B04A9FA31BCE45FC000EF2E2 /* Build configuration list for PBXNativeTarget "医药大典" */;
 			buildPhases = (
+				6922C5B537AC27DDF3E148DE /* Check Pods Manifest.lock */,
 				B04A9F7C1BCE45FC000EF2E2 /* Sources */,
 				B04A9F7D1BCE45FC000EF2E2 /* Frameworks */,
 				B04A9F7E1BCE45FC000EF2E2 /* Resources */,
+				CBC37F5A0165A4ED4C3D1FFD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6922C5B537AC27DDF3E148DE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CBC37F5A0165A4ED4C3D1FFD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B04A9F7C1BCE45FC000EF2E2 /* Sources */ = {
@@ -347,6 +406,7 @@
 		};
 		B04A9FA41BCE45FC000EF2E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A057D7A1D31F1BC4B4BC4FDB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "医药大典/Info.plist";
@@ -357,6 +417,7 @@
 		};
 		B04A9FA51BCE45FC000EF2E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 349551661278427623EAC986 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "医药大典/Info.plist";
@@ -418,6 +479,7 @@
 				B04A9FA51BCE45FC000EF2E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B04A9FA61BCE45FC000EF2E2 /* Build configuration list for PBXNativeTarget "医药大典Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +488,7 @@
 				B04A9FA81BCE45FC000EF2E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

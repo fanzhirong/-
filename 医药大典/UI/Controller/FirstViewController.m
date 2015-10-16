@@ -45,6 +45,7 @@ typedef NS_ENUM(NSUInteger,DrawerControllerState)
 -(id)initWithLeft:(UIViewController<DrawerControllerChild,DrawercontrollerHandler>*)leftViewController rightViewController:(UIViewController<DrawerControllerChild,DrawercontrollerHandler>*)rightViewController
 {
     if (self = [super init]) {
+        self.controllArr = [NSMutableArray array];
         _leftViewController = leftViewController;
         _rightViewController = rightViewController;
         
@@ -270,7 +271,19 @@ typedef NS_ENUM(NSUInteger,DrawerControllerState)
     }
 }
 
-
+-(void)drawController
+{
+    switch (self.drawerState) {
+        case DrawerControllerStateClosed:
+            [self open];
+            break;
+        case DrawerControllerStateOpen:
+            [self close];
+            break;
+        default:
+            break;
+    }
+}
 -(void)open
 {
     NSParameterAssert(self.drawerState == DrawerControllerStateClosed);
@@ -344,10 +357,8 @@ typedef NS_ENUM(NSUInteger,DrawerControllerState)
     
     [self addClosingGestureRecognizer];
     
-    // Keep track that the drawer is open
     self.drawerState = DrawerControllerStateOpen;
     
-    // Notify the child view controllers that the drawer is open
     if ([self.leftViewController respondsToSelector:@selector(drawerControllerDidOpen:)]) {
         [self.leftViewController drawerControllerDidOpen:self];
     }
@@ -356,19 +367,52 @@ typedef NS_ENUM(NSUInteger,DrawerControllerState)
     }
 
 }
+
+
+-(void)reloadCenterControllerWithViewController:(NSInteger)index
+{
+    NSParameterAssert(self.drawerState == DrawerControllerStateOpen);
+    NSParameterAssert(self.rightViewController);
+    NSParameterAssert(self.centerView);
+    
+    UINavigationController<DrawerControllerChild,DrawercontrollerHandler> *viewController = self.controllArr[index];
+    
+    NSParameterAssert(viewController);
+    
+    [self willClose];
+    
+    CGRect f = self.centerView.frame;
+    f.origin.x = self.view.bounds.size.width;
+    
+    [self.rightViewController willMoveToParentViewController:nil];
+    [UIView animateWithDuration: kICSDrawerControllerAnimationDuration / 2
+                     animations:^{
+                         self.centerView.frame = f;
+                     }
+                     completion:^(BOOL finished) {
+                         if ([self.rightViewController respondsToSelector:@selector(setDrawer:)]) {
+                             self.rightViewController.drawer = nil;
+                         }
+                         [self.rightViewController.view removeFromSuperview];
+                         [self.rightViewController removeFromParentViewController];
+                         self.rightViewController = viewController;
+                         if ([self.rightViewController respondsToSelector:@selector(setDrawer:)]) {
+                             self.rightViewController.drawer = self;
+                         }
+                         
+                         // Add the new center view controller to the container
+                         [self addCenterViewController];
+                         
+                         // Finally, close the drawer
+                         [self animationClose];
+                     }];
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

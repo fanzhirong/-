@@ -1,30 +1,30 @@
 //
-//  DetailOneViewController.m
+//  ChildViewController.m
 //  医药大典
 //
-//  Created by qf on 15/10/14.
+//  Created by qf on 15/10/16.
 //  Copyright (c) 2015年 fanzhirong. All rights reserved.
 //
 
-#import "DetailOneViewController.h"
+#import "ChildViewController.h"
 #import "FirstViewController.h"
-@interface DetailOneViewController ()
+@interface ChildViewController ()
 
 @end
 
-@implementation DetailOneViewController
+
+@implementation ChildViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor grayColor];
     [self setViews];
-    // Do any additional setup after loading the view.
+    
 }
-
 
 -(void)setViews
 {
-    self.navigationItem.title = @"首页";
+    self.navigationItem.title = @"妇科药方";
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
     [button setImage:[UIImage imageNamed:@"reveal-icon"] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -37,9 +37,9 @@
 {
     UINavigationController <DrawerControllerChild,DrawercontrollerHandler>*viewController = (UINavigationController<DrawerControllerChild,DrawercontrollerHandler>*)self.navigationController;
     
-   
     [viewController.drawer drawController];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

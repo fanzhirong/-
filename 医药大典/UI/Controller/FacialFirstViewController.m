@@ -1,30 +1,28 @@
 //
-//  DetailOneViewController.m
+//  FacialFirstViewController.m
 //  医药大典
 //
-//  Created by qf on 15/10/14.
+//  Created by qf on 15/10/16.
 //  Copyright (c) 2015年 fanzhirong. All rights reserved.
 //
 
-#import "DetailOneViewController.h"
+#import "FacialFirstViewController.h"
 #import "FirstViewController.h"
-@interface DetailOneViewController ()
+@interface FacialFirstViewController ()
 
 @end
 
-@implementation DetailOneViewController
+@implementation FacialFirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor blueColor];
     [self setViews];
     // Do any additional setup after loading the view.
 }
-
-
 -(void)setViews
 {
-    self.navigationItem.title = @"首页";
+    self.navigationItem.title = @"五官药方";
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
     [button setImage:[UIImage imageNamed:@"reveal-icon"] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -37,22 +35,14 @@
 {
     UINavigationController <DrawerControllerChild,DrawercontrollerHandler>*viewController = (UINavigationController<DrawerControllerChild,DrawercontrollerHandler>*)self.navigationController;
     
-   
     [viewController.drawer drawController];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

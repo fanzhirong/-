@@ -10,4 +10,13 @@
 
 @implementation ShadowView
 
+
+-(void)drawRect:(CGRect)rect
+{
+    self.layer.shadowOffset = CGSizeZero;
+    self.layer.shadowOpacity = 0.7f;
+    
+    UIBezierPath *shadowPath = [UIBezierPath bezierPathWithRect:self.bounds];
+    self.layer.shadowPath = shadowPath.CGPath;
+}
 @end

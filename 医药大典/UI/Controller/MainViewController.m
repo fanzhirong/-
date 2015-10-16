@@ -11,7 +11,10 @@
 #import "FirstViewController.h"
 #import "TitleViewController.h"
 #import "DetailOneViewController.h"
-
+#import "FacialNavigationController.h"
+#import "FacialFirstViewController.h"
+#import "ChildNavigationController.h"
+#import "ChildViewController.h"
 @interface MainViewController ()
 
 @end
@@ -20,14 +23,30 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor grayColor];
     [self setViews];
 }
 
 -(void)setViews
 {
     TitleViewController *titleVc = [[TitleViewController alloc]init];
-    DetailViewController *detailVc = [[DetailViewController alloc]init];
+    
+    
+    DetailOneViewController *detailOVc = [[DetailOneViewController alloc]init];
+    DetailViewController *detailVc = [[DetailViewController alloc]initWithRootViewController:detailOVc];
+    
+    FacialFirstViewController *facialVc = [[FacialFirstViewController alloc]init];
+    FacialNavigationController *facialNVc = [[FacialNavigationController alloc]initWithRootViewController:facialVc];
+    
+    ChildViewController *childVc = [[ChildViewController alloc]init];
+    ChildNavigationController *childNVc = [[ChildNavigationController alloc]initWithRootViewController:childVc];
+    
     FirstViewController *firstVc = [[FirstViewController alloc]initWithLeft:titleVc rightViewController:detailVc];
+    
+    [firstVc.controllArr addObject:detailVc];
+    [firstVc.controllArr addObject:facialNVc];
+    [firstVc.controllArr addObject:childNVc];
+    
     [self.view addSubview:firstVc.view];
     [self addChildViewController:firstVc];
     

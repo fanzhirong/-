@@ -19,13 +19,15 @@
 @property (nonatomic,strong)UIViewController<DrawerControllerChild,DrawercontrollerHandler> *leftViewController;
 @property (nonatomic,strong)UIViewController<DrawerControllerChild,DrawercontrollerHandler> *rightViewController;
 
+//存储不同页面的控制器对象
+@property (nonatomic,strong)NSMutableArray *controllArr;
 
 //声明方法
 -(void)open;
 -(void)close;
+-(void)drawController;
 
--(void)reloadCenterControllerUsingBlock:(void(^)(void))reloadBlock;
--(void)reloadCenterControllerWithViewController:(UIViewController<DrawerControllerChild,DrawercontrollerHandler>*)centerViewController;
+-(void)reloadCenterControllerWithViewController:(NSInteger)index;
 
 -(id)initWithLeft:(UIViewController<DrawerControllerChild,DrawercontrollerHandler>*)leftViewController rightViewController:(UIViewController<DrawerControllerChild,DrawercontrollerHandler>*)rightViewController;
 @end

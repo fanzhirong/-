@@ -1,23 +1,22 @@
 //
-//  DetailViewController.m
+//  FacialNavigationController.m
 //  医药大典
 //
-//  Created by qf on 15/10/14.
+//  Created by qf on 15/10/16.
 //  Copyright (c) 2015年 fanzhirong. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "FacialNavigationController.h"
 
-@interface DetailViewController ()
+@interface FacialNavigationController ()
 
 @end
 
-@implementation DetailViewController
+@implementation FacialNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    
+    // Do any additional setup after loading the view.
 }
 
 
@@ -29,11 +28,12 @@
 {
     drawrController.view.userInteractionEnabled = YES;
 }
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-  
+    // Dispose of any resources that can be recreated.
 }
-
 
 
 @end

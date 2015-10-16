@@ -69,6 +69,10 @@
 		B06CD7AF1BD09B7A0020C15E /* Twitter-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD77E1BD09B7A0020C15E /* Twitter-32@2x.png */; };
 		B06CD7B01BD09B7A0020C15E /* wf.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD77F1BD09B7A0020C15E /* wf.png */; };
 		B06CD7B11BD09B7A0020C15E /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD7801BD09B7A0020C15E /* youtube.png */; };
+		B06CD7B41BD0DB540020C15E /* FacialNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06CD7B31BD0DB540020C15E /* FacialNavigationController.m */; };
+		B06CD7B71BD0DC290020C15E /* FacialFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06CD7B61BD0DC290020C15E /* FacialFirstViewController.m */; };
+		B06CD7BA1BD0E46B0020C15E /* ChildNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06CD7B91BD0E46B0020C15E /* ChildNavigationController.m */; };
+		B06CD7BD1BD0E4850020C15E /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06CD7BC1BD0E4850020C15E /* ChildViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +110,6 @@
 		B04A9FBB1BCE4E4A000EF2E2 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		B04A9FBD1BCE510E000EF2E2 /* DetailOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailOneViewController.h; sourceTree = "<group>"; };
 		B04A9FBE1BCE510E000EF2E2 /* DetailOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailOneViewController.m; sourceTree = "<group>"; };
-		B04A9FC01BCE74D2000EF2E2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		B04A9FC11BCE74D2000EF2E2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		B06CD74D1BCFD5F70020C15E /* ShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowView.h; sourceTree = "<group>"; };
 		B06CD74E1BCFD5F70020C15E /* ShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowView.m; sourceTree = "<group>"; };
 		B06CD7501BD09B7A0020C15E /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
@@ -159,6 +161,15 @@
 		B06CD77E1BD09B7A0020C15E /* Twitter-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-32@2x.png"; sourceTree = "<group>"; };
 		B06CD77F1BD09B7A0020C15E /* wf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wf.png; sourceTree = "<group>"; };
 		B06CD7801BD09B7A0020C15E /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
+		B06CD7B21BD0DB540020C15E /* FacialNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacialNavigationController.h; sourceTree = "<group>"; };
+		B06CD7B31BD0DB540020C15E /* FacialNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacialNavigationController.m; sourceTree = "<group>"; };
+		B06CD7B51BD0DC290020C15E /* FacialFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacialFirstViewController.h; sourceTree = "<group>"; };
+		B06CD7B61BD0DC290020C15E /* FacialFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacialFirstViewController.m; sourceTree = "<group>"; };
+		B06CD7B81BD0E46B0020C15E /* ChildNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildNavigationController.h; sourceTree = "<group>"; };
+		B06CD7B91BD0E46B0020C15E /* ChildNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildNavigationController.m; sourceTree = "<group>"; };
+		B06CD7BB1BD0E4850020C15E /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
+		B06CD7BC1BD0E4850020C15E /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
+		B06CD7BE1BD0F1590020C15E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +203,7 @@
 		B04A9F771BCE45FC000EF2E2 = {
 			isa = PBXGroup;
 			children = (
+				B06CD7BE1BD0F1590020C15E /* PrefixHeader.pch */,
 				B04A9F821BCE45FC000EF2E2 /* 医药大典 */,
 				B04A9F9C1BCE45FC000EF2E2 /* 医药大典Tests */,
 				B04A9F811BCE45FC000EF2E2 /* Products */,
@@ -345,6 +357,14 @@
 				B04A9FBB1BCE4E4A000EF2E2 /* DetailViewController.m */,
 				B04A9FBD1BCE510E000EF2E2 /* DetailOneViewController.h */,
 				B04A9FBE1BCE510E000EF2E2 /* DetailOneViewController.m */,
+				B06CD7B21BD0DB540020C15E /* FacialNavigationController.h */,
+				B06CD7B31BD0DB540020C15E /* FacialNavigationController.m */,
+				B06CD7B51BD0DC290020C15E /* FacialFirstViewController.h */,
+				B06CD7B61BD0DC290020C15E /* FacialFirstViewController.m */,
+				B06CD7B81BD0E46B0020C15E /* ChildNavigationController.h */,
+				B06CD7B91BD0E46B0020C15E /* ChildNavigationController.m */,
+				B06CD7BB1BD0E4850020C15E /* ChildViewController.h */,
+				B06CD7BC1BD0E4850020C15E /* ChildViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -446,7 +466,6 @@
 			knownRegions = (
 				en,
 				Base,
-				"zh-Hans",
 			);
 			mainGroup = B04A9F771BCE45FC000EF2E2;
 			productRefGroup = B04A9F811BCE45FC000EF2E2 /* Products */;
@@ -568,12 +587,16 @@
 			files = (
 				B06CD74F1BCFD5F70020C15E /* ShadowView.m in Sources */,
 				B04A9F891BCE45FC000EF2E2 /* AppDelegate.m in Sources */,
+				B06CD7B41BD0DB540020C15E /* FacialNavigationController.m in Sources */,
+				B06CD7B71BD0DC290020C15E /* FacialFirstViewController.m in Sources */,
 				B04A9FB61BCE4ADE000EF2E2 /* TitleViewController.m in Sources */,
 				B04A9FB91BCE4B07000EF2E2 /* FirstViewController.m in Sources */,
 				B04A9FB31BCE49B0000EF2E2 /* MainViewController.m in Sources */,
+				B06CD7BA1BD0E46B0020C15E /* ChildNavigationController.m in Sources */,
 				B04A9FBF1BCE510E000EF2E2 /* DetailOneViewController.m in Sources */,
 				B04A9F861BCE45FC000EF2E2 /* main.m in Sources */,
 				B04A9FBC1BCE4E4A000EF2E2 /* DetailViewController.m in Sources */,
+				B06CD7BD1BD0E4850020C15E /* ChildViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +623,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				B04A9F8E1BCE45FC000EF2E2 /* Base */,
-				B04A9FC01BCE74D2000EF2E2 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -609,7 +631,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				B04A9F931BCE45FC000EF2E2 /* Base */,
-				B04A9FC11BCE74D2000EF2E2 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -642,6 +663,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -685,6 +707,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

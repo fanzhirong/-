@@ -13,6 +13,8 @@
 
 @property (nonatomic,strong)UITableView *table;
 @property (nonatomic,strong)NSMutableArray *dataArray;
+@property (nonatomic,assign)NSInteger previousRow;
+
 
 @end
 
@@ -31,13 +33,14 @@
 }
 -(void)setTableView
 {
-    NSLog(@"%f",self.view.frame.size.height);
-    _table = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, 260.0f, 9*60+44)];
+    _table = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, 260.0f, 9*50+44)];
     _table.delegate = self;
     _table.dataSource = self;
     _table.bounces = NO;
     _table.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:_table];
+    
+    
 
 }
 
@@ -75,7 +78,19 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    return 50;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == self.previousRow) {
+        [self.drawer close];
+    }
+    else
+    {
+    [self.drawer reloadCenterControllerWithViewController:indexPath.row];
+    }
+    self.previousRow = indexPath.row;
 }
 -(void)drawerControllerWillOpen:(FirstViewController *)drawrController
 {

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EC18CCC6-EAC1-4DEA-96DC-DBB0428D3D74</string>
+	<key>IDESourceControlProjectName</key>
+	<string>医药大典</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FB8C8DFCF25969341E592E87288D4BE54710BED4</key>
+		<string>https://github.com/fanzhirong/-.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>医药大典.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FB8C8DFCF25969341E592E87288D4BE54710BED4</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/fanzhirong/-.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FB8C8DFCF25969341E592E87288D4BE54710BED4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FB8C8DFCF25969341E592E87288D4BE54710BED4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E5%8C%BB%E8%8D%AF%E5%A4%A7%E5%85%B8</string>
+		</dict>
+	</array>
+</dict>
+</plist>

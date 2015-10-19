@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+
+#define ChildPath (@"http://ys.idwoo.com/api/?json=get_category_posts&id=63")
 @interface ChildViewController : UIViewController
 
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define DetailPath (@"http://ys.idwoo.com/api/?json=get_category_posts&id=58")
+
 @interface DetailOneViewController : UIViewController
 
 @end

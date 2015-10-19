@@ -15,6 +15,16 @@
 #import "FacialFirstViewController.h"
 #import "ChildNavigationController.h"
 #import "ChildViewController.h"
+#import "InternalNavigationController.h"
+#import "InternalViewController.h"
+#import "ChirurgeryNavigationController.h"
+#import "ChirurgeryViewController.h"
+#import "GynaecologyNavigationController.h"
+#import "GynaecologyViewController.h"
+#import "MaleNavigationController.h"
+#import "MaleViewController.h"
+#import "SkinNavigationController.h"
+#import "SkinViewController.h"
 @interface MainViewController ()
 
 @end
@@ -41,11 +51,32 @@
     ChildViewController *childVc = [[ChildViewController alloc]init];
     ChildNavigationController *childNVc = [[ChildNavigationController alloc]initWithRootViewController:childVc];
     
+    InternalViewController *interVc = [[InternalViewController alloc]init];
+    InternalNavigationController *interNvc = [[InternalNavigationController alloc]initWithRootViewController:interVc];
+    
+    ChirurgeryViewController *chiruVc = [[ChirurgeryViewController alloc]init];
+    ChirurgeryNavigationController *chiruNvc = [[ChirurgeryNavigationController alloc]initWithRootViewController:chiruVc];
+    
+    GynaecologyViewController *gyVc = [[GynaecologyViewController alloc]init];
+    GynaecologyNavigationController *gyNvc = [[GynaecologyNavigationController alloc]initWithRootViewController:gyVc];
+    
+    MaleViewController *maleVc = [[MaleViewController alloc]init];
+    MaleNavigationController *maleNvc = [[MaleNavigationController alloc]initWithRootViewController:maleVc];
+    
+    SkinViewController *skinVc = [[SkinViewController alloc]init];
+    SkinNavigationController *skinNvc = [[SkinNavigationController alloc]initWithRootViewController:skinVc];
+    
     FirstViewController *firstVc = [[FirstViewController alloc]initWithLeft:titleVc rightViewController:detailVc];
     
     [firstVc.controllArr addObject:detailVc];
     [firstVc.controllArr addObject:facialNVc];
     [firstVc.controllArr addObject:childNVc];
+    [firstVc.controllArr addObject:interNvc];
+    [firstVc.controllArr addObject:chiruNvc];
+    [firstVc.controllArr addObject:gyNvc];
+    [firstVc.controllArr addObject:maleNvc];
+    [firstVc.controllArr addObject:skinNvc];
+  
     
     [self.view addSubview:firstVc.view];
     [self addChildViewController:firstVc];

@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		9D9C8CE2D713FCF01836848A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD71BA442C1F6C110335358 /* libPods.a */; };
+		B00BFDDD1BD2747300E15077 /* InternalNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00BFDDC1BD2747300E15077 /* InternalNavigationController.m */; };
+		B00BFDE01BD2748A00E15077 /* ChirurgeryNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00BFDDF1BD2748A00E15077 /* ChirurgeryNavigationController.m */; };
+		B00BFDE31BD274C600E15077 /* GynaecologyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00BFDE21BD274C600E15077 /* GynaecologyNavigationController.m */; };
+		B00BFDE61BD274F600E15077 /* MaleNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00BFDE51BD274F600E15077 /* MaleNavigationController.m */; };
+		B00BFDE91BD2752300E15077 /* SkinNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00BFDE81BD2752300E15077 /* SkinNavigationController.m */; };
+		B00BFDEC1BD275F200E15077 /* InternalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00BFDEB1BD275F200E15077 /* InternalViewController.m */; };
+		B00BFDEF1BD2760B00E15077 /* ChirurgeryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00BFDEE1BD2760B00E15077 /* ChirurgeryViewController.m */; };
+		B00BFDF21BD2763B00E15077 /* GynaecologyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00BFDF11BD2763B00E15077 /* GynaecologyViewController.m */; };
+		B00BFDF51BD2764E00E15077 /* MaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00BFDF41BD2764E00E15077 /* MaleViewController.m */; };
+		B00BFDF81BD2765C00E15077 /* SkinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00BFDF71BD2765C00E15077 /* SkinViewController.m */; };
+		B00BFDFB1BD2852900E15077 /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B00BFDFA1BD2852900E15077 /* AlertManager.m */; };
 		B04A9F861BCE45FC000EF2E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B04A9F851BCE45FC000EF2E2 /* main.m */; };
 		B04A9F891BCE45FC000EF2E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B04A9F881BCE45FC000EF2E2 /* AppDelegate.m */; };
 		B04A9F8F1BCE45FC000EF2E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04A9F8D1BCE45FC000EF2E2 /* Main.storyboard */; };
@@ -55,7 +66,6 @@
 		B06CD7A11BD09B7A0020C15E /* Medal-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD7701BD09B7A0020C15E /* Medal-32@2x.png */; };
 		B06CD7A21BD09B7A0020C15E /* News-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD7711BD09B7A0020C15E /* News-32@2x.png */; };
 		B06CD7A31BD09B7A0020C15E /* Online-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD7721BD09B7A0020C15E /* Online-32@2x.png */; };
-		B06CD7A41BD09B7A0020C15E /* PkgInfo in Resources */ = {isa = PBXBuildFile; fileRef = B06CD7731BD09B7A0020C15E /* PkgInfo */; };
 		B06CD7A51BD09B7A0020C15E /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD7741BD09B7A0020C15E /* play_button.png */; };
 		B06CD7A61BD09B7A0020C15E /* retweet.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD7751BD09B7A0020C15E /* retweet.png */; };
 		B06CD7A71BD09B7A0020C15E /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD7761BD09B7A0020C15E /* reveal-icon.png */; };
@@ -64,7 +74,6 @@
 		B06CD7AA1BD09B7A0020C15E /* Shopping-Bag-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD7791BD09B7A0020C15E /* Shopping-Bag-32@2x.png */; };
 		B06CD7AB1BD09B7A0020C15E /* Stack-Photos-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD77A1BD09B7A0020C15E /* Stack-Photos-32@2x.png */; };
 		B06CD7AC1BD09B7A0020C15E /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD77B1BD09B7A0020C15E /* star.png */; };
-		B06CD7AD1BD09B7A0020C15E /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = B06CD77C1BD09B7A0020C15E /* style.css */; };
 		B06CD7AE1BD09B7A0020C15E /* TV-Show-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD77D1BD09B7A0020C15E /* TV-Show-32@2x.png */; };
 		B06CD7AF1BD09B7A0020C15E /* Twitter-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD77E1BD09B7A0020C15E /* Twitter-32@2x.png */; };
 		B06CD7B01BD09B7A0020C15E /* wf.png in Resources */ = {isa = PBXBuildFile; fileRef = B06CD77F1BD09B7A0020C15E /* wf.png */; };
@@ -73,6 +82,10 @@
 		B06CD7B71BD0DC290020C15E /* FacialFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06CD7B61BD0DC290020C15E /* FacialFirstViewController.m */; };
 		B06CD7BA1BD0E46B0020C15E /* ChildNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06CD7B91BD0E46B0020C15E /* ChildNavigationController.m */; };
 		B06CD7BD1BD0E4850020C15E /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06CD7BC1BD0E4850020C15E /* ChildViewController.m */; };
+		B06CD7C11BD0F8350020C15E /* NetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = B06CD7C01BD0F8350020C15E /* NetWorking.m */; };
+		B06CD7C41BD0FE250020C15E /* DetailFirstBean.m in Sources */ = {isa = PBXBuildFile; fileRef = B06CD7C31BD0FE250020C15E /* DetailFirstBean.m */; };
+		B06CD7C71BD10FEC0020C15E /* DetailFirstTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B06CD7C61BD10FEC0020C15E /* DetailFirstTableViewCell.m */; };
+		B06CD7CA1BD11F970020C15E /* DetailSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06CD7C91BD11F970020C15E /* DetailSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +102,28 @@
 		349551661278427623EAC986 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8DD71BA442C1F6C110335358 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A057D7A1D31F1BC4B4BC4FDB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B00BFDDB1BD2747300E15077 /* InternalNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternalNavigationController.h; sourceTree = "<group>"; };
+		B00BFDDC1BD2747300E15077 /* InternalNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternalNavigationController.m; sourceTree = "<group>"; };
+		B00BFDDE1BD2748A00E15077 /* ChirurgeryNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChirurgeryNavigationController.h; sourceTree = "<group>"; };
+		B00BFDDF1BD2748A00E15077 /* ChirurgeryNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChirurgeryNavigationController.m; sourceTree = "<group>"; };
+		B00BFDE11BD274C600E15077 /* GynaecologyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GynaecologyNavigationController.h; sourceTree = "<group>"; };
+		B00BFDE21BD274C600E15077 /* GynaecologyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GynaecologyNavigationController.m; sourceTree = "<group>"; };
+		B00BFDE41BD274F600E15077 /* MaleNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaleNavigationController.h; sourceTree = "<group>"; };
+		B00BFDE51BD274F600E15077 /* MaleNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaleNavigationController.m; sourceTree = "<group>"; };
+		B00BFDE71BD2752300E15077 /* SkinNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinNavigationController.h; sourceTree = "<group>"; };
+		B00BFDE81BD2752300E15077 /* SkinNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkinNavigationController.m; sourceTree = "<group>"; };
+		B00BFDEA1BD275F200E15077 /* InternalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternalViewController.h; sourceTree = "<group>"; };
+		B00BFDEB1BD275F200E15077 /* InternalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternalViewController.m; sourceTree = "<group>"; };
+		B00BFDED1BD2760B00E15077 /* ChirurgeryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChirurgeryViewController.h; sourceTree = "<group>"; };
+		B00BFDEE1BD2760B00E15077 /* ChirurgeryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChirurgeryViewController.m; sourceTree = "<group>"; };
+		B00BFDF01BD2763B00E15077 /* GynaecologyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GynaecologyViewController.h; sourceTree = "<group>"; };
+		B00BFDF11BD2763B00E15077 /* GynaecologyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GynaecologyViewController.m; sourceTree = "<group>"; };
+		B00BFDF31BD2764E00E15077 /* MaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaleViewController.h; sourceTree = "<group>"; };
+		B00BFDF41BD2764E00E15077 /* MaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaleViewController.m; sourceTree = "<group>"; };
+		B00BFDF61BD2765C00E15077 /* SkinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinViewController.h; sourceTree = "<group>"; };
+		B00BFDF71BD2765C00E15077 /* SkinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkinViewController.m; sourceTree = "<group>"; };
+		B00BFDF91BD2852900E15077 /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
+		B00BFDFA1BD2852900E15077 /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
 		B04A9F801BCE45FC000EF2E2 /* 医药大典.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "医药大典.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04A9F841BCE45FC000EF2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B04A9F851BCE45FC000EF2E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -147,7 +182,6 @@
 		B06CD7701BD09B7A0020C15E /* Medal-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medal-32@2x.png"; sourceTree = "<group>"; };
 		B06CD7711BD09B7A0020C15E /* News-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "News-32@2x.png"; sourceTree = "<group>"; };
 		B06CD7721BD09B7A0020C15E /* Online-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Online-32@2x.png"; sourceTree = "<group>"; };
-		B06CD7731BD09B7A0020C15E /* PkgInfo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PkgInfo; sourceTree = "<group>"; };
 		B06CD7741BD09B7A0020C15E /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button.png; sourceTree = "<group>"; };
 		B06CD7751BD09B7A0020C15E /* retweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = retweet.png; sourceTree = "<group>"; };
 		B06CD7761BD09B7A0020C15E /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
@@ -156,7 +190,6 @@
 		B06CD7791BD09B7A0020C15E /* Shopping-Bag-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shopping-Bag-32@2x.png"; sourceTree = "<group>"; };
 		B06CD77A1BD09B7A0020C15E /* Stack-Photos-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stack-Photos-32@2x.png"; sourceTree = "<group>"; };
 		B06CD77B1BD09B7A0020C15E /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
-		B06CD77C1BD09B7A0020C15E /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		B06CD77D1BD09B7A0020C15E /* TV-Show-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TV-Show-32@2x.png"; sourceTree = "<group>"; };
 		B06CD77E1BD09B7A0020C15E /* Twitter-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter-32@2x.png"; sourceTree = "<group>"; };
 		B06CD77F1BD09B7A0020C15E /* wf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wf.png; sourceTree = "<group>"; };
@@ -170,6 +203,14 @@
 		B06CD7BB1BD0E4850020C15E /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
 		B06CD7BC1BD0E4850020C15E /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
 		B06CD7BE1BD0F1590020C15E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B06CD7BF1BD0F8350020C15E /* NetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorking.h; sourceTree = "<group>"; };
+		B06CD7C01BD0F8350020C15E /* NetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorking.m; sourceTree = "<group>"; };
+		B06CD7C21BD0FE250020C15E /* DetailFirstBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailFirstBean.h; sourceTree = "<group>"; };
+		B06CD7C31BD0FE250020C15E /* DetailFirstBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailFirstBean.m; sourceTree = "<group>"; };
+		B06CD7C51BD10FEC0020C15E /* DetailFirstTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailFirstTableViewCell.h; sourceTree = "<group>"; };
+		B06CD7C61BD10FEC0020C15E /* DetailFirstTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailFirstTableViewCell.m; sourceTree = "<group>"; };
+		B06CD7C81BD11F970020C15E /* DetailSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailSecondViewController.h; sourceTree = "<group>"; };
+		B06CD7C91BD11F970020C15E /* DetailSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,7 +351,6 @@
 				B06CD7701BD09B7A0020C15E /* Medal-32@2x.png */,
 				B06CD7711BD09B7A0020C15E /* News-32@2x.png */,
 				B06CD7721BD09B7A0020C15E /* Online-32@2x.png */,
-				B06CD7731BD09B7A0020C15E /* PkgInfo */,
 				B06CD7741BD09B7A0020C15E /* play_button.png */,
 				B06CD7751BD09B7A0020C15E /* retweet.png */,
 				B06CD7761BD09B7A0020C15E /* reveal-icon.png */,
@@ -319,7 +359,6 @@
 				B06CD7791BD09B7A0020C15E /* Shopping-Bag-32@2x.png */,
 				B06CD77A1BD09B7A0020C15E /* Stack-Photos-32@2x.png */,
 				B06CD77B1BD09B7A0020C15E /* star.png */,
-				B06CD77C1BD09B7A0020C15E /* style.css */,
 				B06CD77D1BD09B7A0020C15E /* TV-Show-32@2x.png */,
 				B06CD77E1BD09B7A0020C15E /* Twitter-32@2x.png */,
 				B06CD77F1BD09B7A0020C15E /* wf.png */,
@@ -331,6 +370,8 @@
 		B04A9FAB1BCE4927000EF2E2 /* NetWorking */ = {
 			isa = PBXGroup;
 			children = (
+				B06CD7BF1BD0F8350020C15E /* NetWorking.h */,
+				B06CD7C01BD0F8350020C15E /* NetWorking.m */,
 			);
 			path = NetWorking;
 			sourceTree = "<group>";
@@ -365,6 +406,30 @@
 				B06CD7B91BD0E46B0020C15E /* ChildNavigationController.m */,
 				B06CD7BB1BD0E4850020C15E /* ChildViewController.h */,
 				B06CD7BC1BD0E4850020C15E /* ChildViewController.m */,
+				B06CD7C51BD10FEC0020C15E /* DetailFirstTableViewCell.h */,
+				B06CD7C61BD10FEC0020C15E /* DetailFirstTableViewCell.m */,
+				B06CD7C81BD11F970020C15E /* DetailSecondViewController.h */,
+				B06CD7C91BD11F970020C15E /* DetailSecondViewController.m */,
+				B00BFDDB1BD2747300E15077 /* InternalNavigationController.h */,
+				B00BFDDC1BD2747300E15077 /* InternalNavigationController.m */,
+				B00BFDDE1BD2748A00E15077 /* ChirurgeryNavigationController.h */,
+				B00BFDDF1BD2748A00E15077 /* ChirurgeryNavigationController.m */,
+				B00BFDE11BD274C600E15077 /* GynaecologyNavigationController.h */,
+				B00BFDE21BD274C600E15077 /* GynaecologyNavigationController.m */,
+				B00BFDE41BD274F600E15077 /* MaleNavigationController.h */,
+				B00BFDE51BD274F600E15077 /* MaleNavigationController.m */,
+				B00BFDE71BD2752300E15077 /* SkinNavigationController.h */,
+				B00BFDE81BD2752300E15077 /* SkinNavigationController.m */,
+				B00BFDEA1BD275F200E15077 /* InternalViewController.h */,
+				B00BFDEB1BD275F200E15077 /* InternalViewController.m */,
+				B00BFDED1BD2760B00E15077 /* ChirurgeryViewController.h */,
+				B00BFDEE1BD2760B00E15077 /* ChirurgeryViewController.m */,
+				B00BFDF01BD2763B00E15077 /* GynaecologyViewController.h */,
+				B00BFDF11BD2763B00E15077 /* GynaecologyViewController.m */,
+				B00BFDF31BD2764E00E15077 /* MaleViewController.h */,
+				B00BFDF41BD2764E00E15077 /* MaleViewController.m */,
+				B00BFDF61BD2765C00E15077 /* SkinViewController.h */,
+				B00BFDF71BD2765C00E15077 /* SkinViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -372,6 +437,8 @@
 		B04A9FAE1BCE4927000EF2E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B00BFDF91BD2852900E15077 /* AlertManager.h */,
+				B00BFDFA1BD2852900E15077 /* AlertManager.m */,
 				B06CD74D1BCFD5F70020C15E /* ShadowView.h */,
 				B06CD74E1BCFD5F70020C15E /* ShadowView.m */,
 			);
@@ -389,6 +456,8 @@
 		B04A9FB01BCE4927000EF2E2 /* Beans */ = {
 			isa = PBXGroup;
 			children = (
+				B06CD7C21BD0FE250020C15E /* DetailFirstBean.h */,
+				B06CD7C31BD0FE250020C15E /* DetailFirstBean.m */,
 			);
 			path = Beans;
 			sourceTree = "<group>";
@@ -484,7 +553,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B06CD7AA1BD09B7A0020C15E /* Shopping-Bag-32@2x.png in Resources */,
-				B06CD7AD1BD09B7A0020C15E /* style.css in Resources */,
 				B06CD7881BD09B7A0020C15E /* btn_post.png in Resources */,
 				B06CD7A61BD09B7A0020C15E /* retweet.png in Resources */,
 				B06CD78D1BD09B7A0020C15E /* default_placeholder.png in Resources */,
@@ -507,7 +575,6 @@
 				B04A9F941BCE45FC000EF2E2 /* LaunchScreen.xib in Resources */,
 				B06CD7931BD09B7A0020C15E /* Graduation-Cap-32@2x.png in Resources */,
 				B06CD7961BD09B7A0020C15E /* ic_pause_active.png in Resources */,
-				B06CD7A41BD09B7A0020C15E /* PkgInfo in Resources */,
 				B04A9F911BCE45FC000EF2E2 /* Images.xcassets in Resources */,
 				B06CD78C1BD09B7A0020C15E /* Comments-32@2x.png in Resources */,
 				B06CD78E1BD09B7A0020C15E /* Domain-32@2x.png in Resources */,
@@ -585,18 +652,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00BFDE61BD274F600E15077 /* MaleNavigationController.m in Sources */,
+				B00BFDF81BD2765C00E15077 /* SkinViewController.m in Sources */,
+				B00BFDDD1BD2747300E15077 /* InternalNavigationController.m in Sources */,
 				B06CD74F1BCFD5F70020C15E /* ShadowView.m in Sources */,
 				B04A9F891BCE45FC000EF2E2 /* AppDelegate.m in Sources */,
 				B06CD7B41BD0DB540020C15E /* FacialNavigationController.m in Sources */,
+				B00BFDEF1BD2760B00E15077 /* ChirurgeryViewController.m in Sources */,
+				B00BFDF21BD2763B00E15077 /* GynaecologyViewController.m in Sources */,
 				B06CD7B71BD0DC290020C15E /* FacialFirstViewController.m in Sources */,
 				B04A9FB61BCE4ADE000EF2E2 /* TitleViewController.m in Sources */,
+				B06CD7CA1BD11F970020C15E /* DetailSecondViewController.m in Sources */,
+				B00BFDE91BD2752300E15077 /* SkinNavigationController.m in Sources */,
 				B04A9FB91BCE4B07000EF2E2 /* FirstViewController.m in Sources */,
+				B00BFDE31BD274C600E15077 /* GynaecologyNavigationController.m in Sources */,
 				B04A9FB31BCE49B0000EF2E2 /* MainViewController.m in Sources */,
+				B06CD7C11BD0F8350020C15E /* NetWorking.m in Sources */,
+				B00BFDE01BD2748A00E15077 /* ChirurgeryNavigationController.m in Sources */,
 				B06CD7BA1BD0E46B0020C15E /* ChildNavigationController.m in Sources */,
+				B00BFDF51BD2764E00E15077 /* MaleViewController.m in Sources */,
 				B04A9FBF1BCE510E000EF2E2 /* DetailOneViewController.m in Sources */,
 				B04A9F861BCE45FC000EF2E2 /* main.m in Sources */,
+				B00BFDFB1BD2852900E15077 /* AlertManager.m in Sources */,
+				B06CD7C41BD0FE250020C15E /* DetailFirstBean.m in Sources */,
+				B06CD7C71BD10FEC0020C15E /* DetailFirstTableViewCell.m in Sources */,
 				B04A9FBC1BCE4E4A000EF2E2 /* DetailViewController.m in Sources */,
 				B06CD7BD1BD0E4850020C15E /* ChildViewController.m in Sources */,
+				B00BFDEC1BD275F200E15077 /* InternalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

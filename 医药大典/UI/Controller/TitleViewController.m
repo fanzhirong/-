@@ -7,6 +7,11 @@
 //
 
 #import "TitleViewController.h"
+#import "AlertManager.h"
+#import "NetWorking.h"
+
+#define APP_STORE_ID @"id1044488392"
+#define VERSION_UPDATE @"http://itunes.apple.com/lookup?id=1044488392"
 
 @interface TitleViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -22,18 +27,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor grayColor];
+    self.view.backgroundColor = DCOLOR(146, 206, 248, 1);
     [self initData];
     [self setTableView];
 }
 
 -(void)initData
 {
-    self.dataArray = [[NSMutableArray alloc]initWithArray:@[@"首页",@"五官偏方",@"儿科偏方",@"内科偏方",@"外科偏方",@"妇科偏方",@"男科偏方",@"皮肤偏方",@"关于我们"]];
+    self.dataArray = [[NSMutableArray alloc]initWithArray:@[@"首页",@"五官偏方",@"儿科偏方",@"内科偏方",@"外科偏方",@"妇科偏方",@"男科偏方",@"皮肤偏方",@"软件版本"]];
 }
 -(void)setTableView
 {
-    _table = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, 260.0f, 9*50+44)];
+    _table = [[UITableView alloc]initWithFrame:CGRectMake(0, 20, 260.0f, 9*40+30)];
     _table.delegate = self;
     _table.dataSource = self;
     _table.bounces = NO;
@@ -63,26 +68,75 @@
     }
     cell.backgroundColor = [UIColor grayColor];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.text = self.dataArray[indexPath.row];
-    cell.textLabel.textColor = [UIColor blackColor];
+    cell.textLabel.textColor = [UIColor whiteColor];
     cell.textLabel.font = [UIFont systemFontOfSize:20];
+    if (indexPath.row == 8) {
+        NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+        NSString *version = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+        NSString *str = [NSString stringWithFormat:@"%@    V%@",self.dataArray[indexPath.row],version];
+        cell.textLabel.text = str;
+    }
+    else
+    {
+         cell.textLabel.text = self.dataArray[indexPath.row];
+    }
     return cell;
 }
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
-    return @"药典大全";
+    UILabel *hview = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 30)];
+    hview.backgroundColor = DCOLOR(146, 206, 248, 1);
+    hview.text = @"   药典大全";
+    hview.font = [UIFont systemFontOfSize:20];
+    hview.textColor = [UIColor whiteColor];
+    return hview;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 44;
-}
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 50;
+    return 30;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 40;
+}
+-(void)updateVersion{
+    [NetWorking getVersionWith:VERSION_UPDATE back:^(NSString *object) {
+        [AlertManager hidden];
+        
+        //获取app当前版本号
+        NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+        NSString *version = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+        
+        
+        
+        float v1 = version.floatValue;
+        float v2 = object.floatValue;
+        if (v2 > v1) {
+            UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"版本提示" message:@"发现新版本！" delegate:self cancelButtonTitle:@"下次提醒" otherButtonTitles:@"现在更新", nil];
+            view.tag = 888;
+            [view show];
+        } else {
+            UIAlertView *view = [[UIAlertView alloc]initWithTitle:@"版本提示" message:@"当前已是最新版本！" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            view.tag = 888;
+            [view show];
+        }
+    }];
+}
+//提示框 itms-apps://itunes.apple.com/app/id1044488392
+-(void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 1 && alertView.tag == 888) {
+        NSString * url = [NSString stringWithFormat:@"itms-apps://itunes.apple.com/app/%@", APP_STORE_ID];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    }
+}
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.row == 8) {
+        [self updateVersion];
+    }
+    else
+    {
     if (indexPath.row == self.previousRow) {
         [self.drawer close];
     }
@@ -91,6 +145,7 @@
     [self.drawer reloadCenterControllerWithViewController:indexPath.row];
     }
     self.previousRow = indexPath.row;
+    }
 }
 -(void)drawerControllerWillOpen:(FirstViewController *)drawrController
 {

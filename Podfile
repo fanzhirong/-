@@ -1,2 +1,6 @@
 platform :ios,'7.0'
 pod 'AFNetworking', '~> 2.5.1'
+pod 'SDWebImage', '~> 3.7.2'
+pod 'MJRefresh', '~> 2.4.12'
+pod 'MobShareSDK', '~> 2.12.0'
+pod 'UMengSocial', '~> 4.2.3'

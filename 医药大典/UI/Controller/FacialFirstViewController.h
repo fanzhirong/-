@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
+#define FacialPath (@"http://ys.idwoo.com/api/?json=get_category_posts&id=59")
 @interface FacialFirstViewController : UIViewController
+
 
 @end
